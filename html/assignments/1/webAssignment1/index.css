@@ -1,0 +1,50 @@
+p.headTitle {
+	color: rgb(164,164,0);
+	font-family: Verdana;
+	font-size: 22pt;
+	text-align: center;
+	font-weight: bold;
+	
+}
+code.headTitle {
+	border-width: thick;
+	border-color: rgb(164,164,0);
+	border-style: dashed;
+}
+
+p.title {
+	color: rgb(164,164,0);
+	font-family: Verdana;
+	font-size: 18pt;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-color: rgb(164,164,0);
+	border-bottom-style: solid;
+
+}
+div {
+	font-size: 17pt;
+	text-align: center;
+}
+a {
+	color: rgb(164,164,0);
+}
+code.title {
+	border-width: thin;
+	border-style: solid;
+	border-color: rgb(164,164,0);
+}
+p.link {
+	margin-top: 200pt;
+	text-align: center;
+}
+
+p.lin {
+	margin-top: 150pt;
+	text-align: center;
+}
+
+body {
+	font-family: Georgia;
+	background-color: black;
+}
