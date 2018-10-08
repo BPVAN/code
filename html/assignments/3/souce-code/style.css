@@ -1,0 +1,253 @@
+/*测试用边框
+div {
+	border-width: 1px;
+	border-color: green;
+	border-style: solid;
+}
+*/
+
+
+
+/*设置整体样式*/
+html, body {
+	margin: 0px;
+	height: 100%;
+}
+#at-plus-container {
+	width: 575px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+#bottom-positioner {
+	width: 575px;
+	height: 575px;
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+}
+li {
+	display: block;
+}
+
+
+/*button设置*/
+#button {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	bottom: 150px;
+}
+
+
+
+
+
+/*info-bar设置*/
+#info-bar {
+	background-color: rgb(126,126,126);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	bottom: 0px;
+	overflow: hidden;
+	opacity: 0;
+	transition-duration: 500ms;
+}
+#button:hover #info-bar {
+	width: 128px;
+	height: 128px;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -15px;
+	opacity: 1;
+	transition-duration: 500ms;
+}
+.info {
+	width: 0px;
+	height: 0px;
+}
+.info > ul {
+	height: 128px;
+	width:128px;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 50%;
+
+}
+.page {
+	width: 128px;
+	float: left;
+}
+.mine {
+	width: 64px;
+	float: left;
+}
+.user {
+	margin-top: 5px;
+}
+.user > img {
+	margin-right: 10px;
+	margin-left: 40px;
+}
+.user > span {
+	color: white;
+	font-size: 15px;
+}
+.comment {
+	margin-top: 5px;
+}
+.comment > img {
+	margin-left: 30px;
+	margin-right: 15px;
+
+}
+.comment > span {
+	color: white;
+	font-size: 28px;
+}
+.mine {
+	margin-top: 5px;
+}
+.posted > img {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.like > img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.mine > span {
+	color: #31D38F;
+}
+
+
+
+
+/*conttrol-ring设置*/
+#control-ring-container {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	bottom: 0px;
+	overflow: hidden;
+	opacity: 0;
+	transition-duration: 500ms;
+}
+#button:hover #control-ring-container {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -170px;
+	overflow: hidden;
+	opacity: 1;
+	transition-duration: 500ms;
+}
+#control-ring > li {
+	background-color: #696969;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+.mask {
+	background-image: url(assets/images/nomask.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	position: absolute;
+	left: 15px;
+	top: 35px;
+}
+.history {
+	background-image: url(assets/images/history.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	position: absolute;
+	left: 5px;
+	top: 71px;
+}
+.message {
+	background-image: url(assets/images/message.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	position: absolute;
+	left: 17px;
+	top: 110px;
+}
+.setting {
+	background-image: url(assets/images/setting.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	position: absolute;
+	left: 48px;
+	bottom: 8px;
+}
+.sign {
+	background-image: url(assets/images/signin.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	position: absolute;
+	left: 90px;
+	bottom: 9px;
+}
+.unread {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	right: -8px;
+	color: white;
+	background-color: #FE3533;
+	text-align: center;
+	font-size: 13px;
+}
+
+
+/*apb设置*/
+.apb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0px;
+	background-image: url(assets/images/atplus_white.png);
+	background-position: 50% 50%;
+	background-size: 20px 16px;
+	background-color: rgb(153,159,212);
+	background-repeat: no-repeat;
+	transition-duration: 500ms;
+}
+#button:hover .apb {
+	transition-duration: 500ms;
+	background-image: url(assets/images/atplus_green.png);
+	background-size: 18px 12px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: rgba(48,63,159,1);
+	transform: scale(2);
+	opacity: 1;
+}
